@@ -12,6 +12,7 @@ public class UIMenu {
     public static Patient patientLogged;
 
     public static void showMenu(){
+        System.out.println();
         System.out.println("Bienvenido al portal de citas");
         System.out.println("Selecciona la opción deseada");
 
@@ -68,7 +69,7 @@ public class UIMenu {
                     if (d.getEmail().equals(email)){
                         emailCorrect = true;
                         doctorLogged = d;
-                        // showDoctorMenu
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
@@ -77,7 +78,7 @@ public class UIMenu {
                     if (p.getEmail().equals(email)){
                         emailCorrect = true;
                         patientLogged = p;
-                        // showPatientMenu
+                        UIPatientMenu.showPatientMenu();
                     }
                 }
             }
