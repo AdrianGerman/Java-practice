@@ -2,15 +2,18 @@ public class Doctor {
     // Atributos
     static int id = 0;
     String name;
+    String email;
     String speciality;
 
     Doctor() {
         System.out.println("Contruyendo el objeto Doctor...");
-        id++;
     }
 
-    Doctor(String name) {
+    Doctor(String name, String speciality) {
         System.out.println("El nombre del Doctor asignado es: " + name);
+        id++;
+        this.name = name;
+        this.speciality = speciality;
     }
 
     // Comportamiento
